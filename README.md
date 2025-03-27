@@ -22,11 +22,9 @@ To run the test suite and validate your LASSO Homotopy model:
 
 **1. Setup Environment**
 
-  python -m venv venv 
-  
-  source venv/bin/activate  # On Windows: venv\Scripts\activate 
-  
-  pip install -r requirements.txt
+  python -m venv venv.
+  source venv/bin/activate  # On Windows: venv\Scripts\activate.
+  pip install -r requirements.txt.
 
 **2. Update Dataset Path in Test File**
 
