@@ -40,7 +40,10 @@ To run the test suite and validate your LASSO Homotopy model:
 
   From the root directory:  
       pytest LassoHomotopy/tests -s  
-      The -s flag shows printed outputs (like coefficient values and sparsity checks).  
+      The -s flag shows printed outputs (like coefficient values and sparsity checks).
+
+* We also created some visualizatioins from the Lasso Homotopy Model in Jupyter Notebook which includes Coefficient comparisons and their values.
+
 
 Answer the following questions.
 
