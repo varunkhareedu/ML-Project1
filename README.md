@@ -23,22 +23,22 @@ To run the test suite and validate your LASSO Homotopy model:
 **1. Setup Environment**
 
   python -m venv venv 
-  source venv/bin/activate  # On Windows: venv\Scripts\activate 
-  pip install -r requirements.txt
+    source venv/bin/activate  # On Windows: venv\Scripts\activate 
+    pip install -r requirements.txt
 
 **2. Update Dataset Path in Test File**
 
   Open LassoHomotopy/tests/test_LassoHomotopy.py and update this line: 
-  with open("../../data.csv", "r") as file. 
-  Replace it with: 
-  with open("LassoHomotopy/tests/small_test.csv", "r") as file: 
-  Or use collinear_data.csv depending on the test scenario.
+    with open("../../data.csv", "r") as file. 
+    Replace it with: 
+    with open("LassoHomotopy/tests/small_test.csv", "r") as file: 
+    Or use collinear_data.csv depending on the test scenario.
 
 **3. Run the Tests**
 
   From the root directory: 
-  pytest LassoHomotopy/tests -s 
-  The -s flag shows printed outputs (like coefficient values and sparsity checks).
+    pytest LassoHomotopy/tests -s 
+    The -s flag shows printed outputs (like coefficient values and sparsity checks).
 
 Put your README here. Answer the following questions.
 
