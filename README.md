@@ -28,30 +28,24 @@ To run the test suite and validate your LASSO Homotopy model:
 
 **2. Update Dataset Path in Test File**
 
-  Open LassoHomotopy/tests/test_LassoHomotopy.py and update this line: 
-  
+  Open LassoHomotopy/tests/test_LassoHomotopy.py and update this line:	
   with open("../../data.csv", "r") as file. 
   
   Replace it with: 
-  
   with open("LassoHomotopy/tests/small_test.csv", "r") as file: 
-  
   Or use collinear_data.csv depending on the test scenario.
 
 **3. Run the Tests**
 
   From the root directory: 
-  
   pytest LassoHomotopy/tests -s 
-  
   The -s flag shows printed outputs (like coefficient values and sparsity checks).
 
 Put your README here. Answer the following questions.
 
 * **What does the model you have implemented do and when should it be used?**
 
-  The version we carried out is a LASSO (Least Absolute Shrinkage and Selection Operator) regression the usage of the Homotopy approach, that's a path-following set of rules. LASSO is a shape of linear regression that provides L1 regularization to the loss function. This regularization time period encourages sparsity withinside the version coefficients, efficiently acting characteristic choice via way of means of using a few coefficients to precisely 0. The Homotopy approach solves the LASSO hassle via way of means of steadily adjusting the regularization parameter λ and tracing how the solution (i.e., the coefficients) evolves as λ decreases. This approach is green and interpretable.
-This version have to be used whilst you count on that simplest a small subset of functions are sincerely critical for predicting your goal variable. It`s best in high-dimensional datasets, or whilst you need a version it is each correct and clean to interpret. Common use instances encompass scientific diagnosis, economic modeling, advertising analytics, and textual content classification, wherein deciding on a small variety of critical variables is crucial.
+  The version we carried out is a LASSO (Least Absolute Shrinkage and Selection Operator) regression the usage of the Homotopy approach, that's a path-following set of rules. LASSO is a shape of linear regression that provides L1 regularization to the loss function. This regularization time period encourages sparsity withinside the version coefficients, efficiently acting characteristic choice via way of means of using a few coefficients to precisely 0. The Homotopy approach solves the LASSO hassle via way of means of steadily adjusting the regularization parameter λ and tracing how the solution (i.e., the coefficients) evolves as λ decreases. This approach is green and interpretable. This version have to be used whilst you count on that simplest a small subset of functions are sincerely critical for predicting your goal variable. It`s best in high-dimensional datasets, or whilst you need a version it is each correct and clean to interpret. Common use instances encompass scientific diagnosis, economic modeling, advertising analytics, and textual content classification, wherein deciding on a small variety of critical variables is crucial.
 
 * **How did you test your model to determine if it is working reasonably correctly?**
 
