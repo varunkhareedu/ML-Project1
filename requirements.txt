@@ -2,4 +2,5 @@ numpy
 pytest
 ipython
 pandas
+matplotlib
 csv
