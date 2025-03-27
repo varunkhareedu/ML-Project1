@@ -1,11 +1,14 @@
 # Project 1 
 
+**Illinois Institute of Technology
+CS584 - Machine Learning (Spring 2025)**
+
 Team Members:
 
-* Naga Sunith Appasani
-* Varun Khareedu
-* Venkata Gandhi Varma Thotakura
-* Parsha Saradhi Bobburi
+* A20552681  -  Naga Sunith Appasani
+* A20536596  -  Varun Khareedu
+* A20546720  -  Venkata Gandhi Varma Thotakura
+* A20555681  -  Parsha Saradhi Bobburi
 
 
 Your objective is to implement the LASSO regularized regression model using the Homotopy Method. You can read about this method in [this](https://people.eecs.berkeley.edu/~elghaoui/Pubs/hom_lasso_NIPS08.pdf) paper and the references therein. You are required to write a README for your project. Please describe how to run the code in your project *in your README*. Including some usage examples would be an excellent idea. You may use Numpy/Scipy, but you may not use built-in models from, e.g. SciKit Learn. This implementation must be done from first principles. You may use SciKit Learn as a source of test data.
@@ -43,7 +46,6 @@ To run the test suite and validate your LASSO Homotopy model:
       The -s flag shows printed outputs (like coefficient values and sparsity checks).
 
 * We also created some visualizatioins from the Lasso Homotopy Model in Jupyter Notebook which includes Coefficient comparisons and their values.
-
 
 Answer the following questions.
 
