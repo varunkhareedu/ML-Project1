@@ -1,6 +1,6 @@
 # Project 1 
 
-Team Members;
+Team Members:
 
 * Naga Sunith Appasani
 * Varun Khareedu
@@ -15,6 +15,36 @@ You should create a virtual environment and install the packages in the requirem
 In order to turn your project in: Create a fork of this repository, fill out the relevant model classes with the correct logic. Please write a number of tests that ensure that your LASSO model is working correctly. It should produce a sparse solution in cases where there is collinear training data. You may check small test sets into GitHub, but if you have a larger one (over, say 20MB), please let us know and we will find an alternative solution. In order for us to consider your project, you *must* open a pull request on this repo. This is how we consider your project is "turned in" and thus we will use the datetime of your pull request as your submission time. If you fail to do this, we will grade your project as if it is late, and your grade will reflect this as detailed on the course syllabus. 
 
 You may include Jupyter notebooks as visualizations or to help explain what your model does, but you will be graded on whether your model is correctly implemented in the model class files and whether we feel your test coverage is adequate. We may award bonus points for compelling improvements/explanations above and beyond the assignment.
+
+Running Tests
+
+To run the test suite and validate your LASSO Homotopy model:
+
+1. Setup Environment
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+2. Update Dataset Path in Test File
+
+Open LassoHomotopy/tests/test_LassoHomotopy.py and update this line:
+
+with open("../../data.csv", "r") as file:
+
+Replace it with:
+
+with open("LassoHomotopy/tests/small_test.csv", "r") as file:
+
+Or use collinear_data.csv depending on the test scenario.
+
+3. Run the Tests
+
+From the root directory:
+
+pytest LassoHomotopy/tests -s
+
+The -s flag shows printed outputs (like coefficient values and sparsity checks).
 
 Put your README here. Answer the following questions.
 
