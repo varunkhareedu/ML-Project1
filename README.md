@@ -20,14 +20,14 @@ You may include Jupyter notebooks as visualizations or to help explain what your
 
 To run the test suite and validate your LASSO Homotopy model:
 
-**1. Setup Environment**
+* **Setup Environment**
 
   python -m venv venv.  
   source venv/bin/activate  
-    # On Windows: venv\Scripts\activate.  
+    @ On Windows: venv\Scripts\activate.  
   pip install -r requirements.txt. 
 
-**2. Update Dataset Path in Test File**
+* **Update Dataset Path in Test File**
 
   Open LassoHomotopy/tests/test_LassoHomotopy.py and  
   
@@ -36,7 +36,7 @@ To run the test suite and validate your LASSO Homotopy model:
   
   Or use collinear_data.csv depending on the test scenario.  
 
-**3. Run the Tests**
+* **Run the Tests**
 
   From the root directory:  
       pytest LassoHomotopy/tests -s  
